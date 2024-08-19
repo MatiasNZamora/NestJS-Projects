@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: Za458612
+      POSTGRES_DB: nest-db
+    ports:
+      -8080:8080
