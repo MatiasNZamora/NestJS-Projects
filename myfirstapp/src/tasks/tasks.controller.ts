@@ -28,7 +28,7 @@ export class TaskController {
     };
 
     @Post()
-    @ApiOperation({ summary:'Create a task' })
+    // @ApiOperation({ summary:'Create a task' })
     // @UsePipes(new ValidationPipe()) //valida el pipe y al validarlo usa el DTO
     createTask( @ Body() task: CreateTaskDto ){
         return this.taskservice.createTask(task);
